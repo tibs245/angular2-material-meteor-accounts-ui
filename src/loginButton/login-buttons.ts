@@ -5,11 +5,21 @@ import {SignupDialog} from '../signupDialog/signup-dialog';
 import { Tracker } from 'meteor/tracker';
 import { Meteor } from 'meteor/meteor';
 
-import html from './login-button.html';
+// import loginButtonHtml from './login-button.html';
 
 @Component({
   selector: 'login-buttons',
-  template: html
+  template: `<button mat-raised-button color="accent" *ngIf="!isLoggedIn" (click)="onLoginDialogAsked()">Login</button>
+  <button mat-button color="accent" *ngIf="!isLoggedIn" (click)="onSignupDialogAsked()">SignUp</button>
+
+  <button mat-button class="user-menu--button"[matMenuTriggerFor]="userMenu" *ngIf="isLoggedIn">{{ displayName() }} <mat-icon>person</mat-icon></button>
+
+  <mat-menu #userMenu="matMenu">
+      <button mat-menu-item (click)="onLogout()">
+          <mat-icon>power_setting_new</mat-icon>
+          <span>Log out</span>
+      </button>
+  </mat-menu>`
 })
 export class LoginButtons {
   autorunComputation: Tracker.Computation;

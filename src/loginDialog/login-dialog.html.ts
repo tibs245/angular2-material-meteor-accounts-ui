@@ -1,4 +1,4 @@
-export const html: string= `<h1 mat-dialog-title>Login form :</h1>
+export const loginDialogHtml: html= `<h1 mat-dialog-title>Login form :</h1>
 <form [formGroup]="loginForm"  (ngSubmit)="onLoginFormSubmit()">
     <div mat-dialog-content>
 

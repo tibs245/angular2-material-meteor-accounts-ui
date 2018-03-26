@@ -1,4 +1,4 @@
-export const signupDialogCss: string=`
+export const signupDialogCss: css=`
 .error-message {
   margin: 20px 0px;
   padding: 5px;
