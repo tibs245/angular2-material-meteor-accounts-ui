@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Login form :</h1>
+export const html: string= `<h1 mat-dialog-title>Login form :</h1>
 <form [formGroup]="loginForm"  (ngSubmit)="onLoginFormSubmit()">
     <div mat-dialog-content>
 
@@ -17,4 +17,4 @@
     <a mat-button (click)="onNoClick()" action="cancel">Exit</a>
     <button mat-raised-button color="primary" action="submit">Login</button>
 </div>
-</form>
+</form>`;

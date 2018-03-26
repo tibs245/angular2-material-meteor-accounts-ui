@@ -47,7 +47,7 @@
     "typings": "^1.3.0",
     "zone.js": "^0.6.23"
   },
-  "homepage": "https://github.com/Urigo/angular2-meteor-accounts-ui#readme",
+  "homepage": "https://github.com/tibs245/angular2-material-meteor-accounts-ui#readme",
   "license": "MIT",
   "main": "build/index.js",
   "name": "angular2-material-meteor-accounts-ui",
@@ -58,7 +58,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/tibs245/angular2-material-meteor-accounts-ui"
   },
   "scripts": {
     "build": "tsc; exit 0"

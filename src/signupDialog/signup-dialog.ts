@@ -4,10 +4,13 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import {ValidationService} from '../validation.service';
 
+import signupDialogHtml from './signup-dialog.html';
+import signupDialogCss from './signup-dialog.css';
+
 @Component({
     selector: 'signup-dialog',
-    templateUrl: 'signup-dialog.html',
-    styleUrls: ['signup-dialog.scss']
+    template: signupDialogHtml,
+    styles: [signupDialogCss]
 })
 
 export class SignupDialog {

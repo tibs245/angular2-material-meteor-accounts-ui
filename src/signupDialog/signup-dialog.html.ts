@@ -1,3 +1,4 @@
+export const signupDialogHtml: string= `
 <h1 mat-dialog-title>Signup form :</h1>
 <form [formGroup]="signupForm"  (ngSubmit)="onSignupFormSubmit()">
     <div mat-dialog-content>
@@ -17,4 +18,4 @@
     <a mat-button (click)="onNoClick()" action="cancel">Exit</a>
     <button mat-raised-button color="primary" action="submit">Sign up</button>
 </div>
-</form>
+</form>`;

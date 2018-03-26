@@ -5,10 +5,11 @@ import {SignupDialog} from '../signupDialog/signup-dialog';
 import { Tracker } from 'meteor/tracker';
 import { Meteor } from 'meteor/meteor';
 
+import html from './login-button.html';
+
 @Component({
   selector: 'login-buttons',
-  styleUrls: ['./login-button.scss'],
-  templateUrl: 'login-button.html'
+  template: html
 })
 export class LoginButtons {
   autorunComputation: Tracker.Computation;
