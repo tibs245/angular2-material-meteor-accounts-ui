@@ -2,7 +2,6 @@ import { NgZone } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Tracker } from 'meteor/tracker';
 import { Meteor } from 'meteor/meteor';
-import './login-button.html';
 export declare class LoginButtons {
     dialog: MatDialog;
     private zone;

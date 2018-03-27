@@ -5,8 +5,6 @@ import {SignupDialog} from '../signupDialog/signup-dialog';
 import { Tracker } from 'meteor/tracker';
 import { Meteor } from 'meteor/meteor';
 
-import './login-button.html';
-
 @Component({
   selector: 'login-buttons',
   template: `<button mat-raised-button color="accent" *ngIf="!isLoggedIn" (click)="onLoginDialogAsked()">Login</button>

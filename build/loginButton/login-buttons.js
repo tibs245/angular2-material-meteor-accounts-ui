@@ -6,7 +6,6 @@ var login_dialog_1 = require("../loginDialog/login-dialog");
 var signup_dialog_1 = require("../signupDialog/signup-dialog");
 var tracker_1 = require("meteor/tracker");
 var meteor_1 = require("meteor/meteor");
-require("./login-button.html");
 var LoginButtons = /** @class */ (function () {
     function LoginButtons(dialog, zone) {
         this.dialog = dialog;
