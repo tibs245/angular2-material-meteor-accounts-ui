@@ -5,7 +5,7 @@ import {SignupDialog} from '../signupDialog/signup-dialog';
 import { Tracker } from 'meteor/tracker';
 import { Meteor } from 'meteor/meteor';
 
-// import loginButtonHtml from './login-button.html';
+import './login-button.html';
 
 @Component({
   selector: 'login-buttons',
@@ -20,6 +20,7 @@ import { Meteor } from 'meteor/meteor';
           <span>Log out</span>
       </button>
   </mat-menu>`
+
 })
 export class LoginButtons {
   autorunComputation: Tracker.Computation;
